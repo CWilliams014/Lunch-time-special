@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- TODO
+      -enter starting location
+      -don't drop markers until search complete
+      -drop starting location marker
+      -display routes to each marker
+      -get only 2 closest of each markers to render
+      -pretty up the styling
+    -->
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Places Searchbox</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB65X39q5tu_e9x22-lDVj16O_AG14LOJU&libraries=geometry,places&callback=initAutocomplete"async defer></script>
+    <script src="map.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
+  <body>
+      <div class="container">
+      <div class="options-box">
+        <h1> Lunch Time Special <span style="font-size: 12px">aka no more individual google maps searches</span</h1>
+        <div>
+          <input id="show-listings" type="button" value="Show Listings">
+          <input id="hide-listings" type="button" value="Hide Listings">
+          <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+        </div>
+        <input id="distance-calculator" type="button" value="distance-calculator">
+        <button id="b" type="button"> Find Closest</button>
+        <div id="times"></div>
+        </div>
+      </div>
+      <div id="map"></div>
+    </div>
+  </body>
+</html>
