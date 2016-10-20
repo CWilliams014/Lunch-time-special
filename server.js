@@ -10,14 +10,14 @@ app.listen(3000, function() {
 });
 
 app.get('/', function(req, res) {
-	res.status(200).sendFile(path.join((__dirname + '/index.html')))
+	res.status(200).sendFile(path.join((__dirname + '/Build/index.html')))
 
 app.get('/map.js', function(req, res) {
-	res.status(200).sendFile(path.join((__dirname + '/map.js')))
+	res.status(200).sendFile(path.join((__dirname + '/Build/map.js')))
 })
 
 app.get('/stylesheet.css', function(req, res) {
-	res.status(200).sendFile(path.join((__dirname + '/stylesheet.css')))
+	res.status(200).sendFile(path.join((__dirname + '/Build/stylesheet.css')))
 })
 
 });
